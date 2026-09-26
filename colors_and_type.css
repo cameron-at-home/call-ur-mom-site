@@ -1,0 +1,128 @@
+/* ============================================================
+   call-ur-mom — Colors & Type
+   SF Pro system font + warm coral palette with sage & amber accents
+   ============================================================ */
+
+:root {
+  /* ---------- Brand palette (light) ---------- */
+  --cum-primary:        #E8705A; /* warm coral — CTAs, tint, active */
+  --cum-primary-light:  #FFF0ED; /* coral tint — selected rows, bg */
+  --cum-secondary:      #7AAE9E; /* sage — secondary actions, badges */
+  --cum-accent:         #F5A623; /* amber — streaks, rewards */
+  --cum-destructive:    #D94141; /* errors, delete, blocking */
+  --cum-success:        #4CAF7D; /* completed calls, streaks */
+
+  /* Surfaces */
+  --cum-bg:             #FBF8F5; /* warm cream — screen bg */
+  --cum-surface:        #FFFFFF; /* cards, sheets */
+  --cum-surface-2:      #F5F1ED; /* grouped rows, chips */
+
+  /* Text */
+  --cum-text-1:         #2D2926; /* primary text, headings */
+  --cum-text-2:         #8C8580; /* secondary, timestamps */
+  --cum-text-3:         #B5AFA9; /* placeholder, disabled */
+  --cum-on-primary:     #FFFFFF; /* text on coral CTAs */
+
+  /* Type — SF Pro via -apple-system, Dynamic Type-like scale (in px) */
+  --cum-font: -apple-system, BlinkMacSystemFont, "SF Pro Text", "SF Pro Display",
+              "Helvetica Neue", Helvetica, Arial, system-ui, sans-serif;
+
+  /* Weights */
+  --cum-w-regular:  400;
+  --cum-w-medium:   500;
+  --cum-w-semibold: 600;
+  --cum-w-bold:     700;
+
+  /* Semantic type tokens (size / line-height / weight) */
+  --cum-large-title-size: 34px; --cum-large-title-lh: 41px; --cum-large-title-weight: 700;
+  --cum-title-size:       28px; --cum-title-lh:       34px; --cum-title-weight:       700;
+  --cum-title2-size:      22px; --cum-title2-lh:      28px; --cum-title2-weight:      600;
+  --cum-title3-size:      20px; --cum-title3-lh:      25px; --cum-title3-weight:      600;
+  --cum-headline-size:    17px; --cum-headline-lh:    22px; --cum-headline-weight:    600;
+  --cum-body-size:        17px; --cum-body-lh:        22px; --cum-body-weight:        400;
+  --cum-callout-size:     16px; --cum-callout-lh:     21px; --cum-callout-weight:     400;
+  --cum-subheadline-size: 15px; --cum-subheadline-lh: 20px; --cum-subheadline-weight: 400;
+  --cum-footnote-size:    13px; --cum-footnote-lh:    18px; --cum-footnote-weight:    400;
+  --cum-caption-size:     12px; --cum-caption-lh:     16px; --cum-caption-weight:     400;
+  --cum-caption2-size:    11px; --cum-caption2-lh:    13px; --cum-caption2-weight:    400;
+
+  /* Spacing — 4pt grid */
+  --cum-s-xs:   4px;
+  --cum-s-sm:   8px;
+  --cum-s-md:  12px;
+  --cum-s-lg:  16px;
+  --cum-s-xl:  24px;
+  --cum-s-xxl: 32px;
+  --cum-s-xxxl:48px;
+
+  /* Corner radii */
+  --cum-r-sm:   8px;
+  --cum-r-md:  12px;
+  --cum-r-lg:  16px;
+  --cum-r-xl:  24px;
+
+  /* Shadows — soft and low */
+  --cum-shadow-card:    0 1px 2px rgba(45, 41, 38, 0.04), 0 2px 8px rgba(45, 41, 38, 0.04);
+  --cum-shadow-toast:   0 4px 8px rgba(45, 41, 38, 0.10);
+  --cum-shadow-elev:    0 8px 24px rgba(45, 41, 38, 0.08);
+
+  /* Transitions */
+  --cum-ease:          cubic-bezier(0.4, 0.0, 0.2, 1); /* iOS-like */
+  --cum-dur-fast:      150ms;
+  --cum-dur-med:       250ms;
+  --cum-dur-slow:      350ms;
+}
+
+/* ---------- Dark mode tokens ---------- */
+@media (prefers-color-scheme: dark) {
+  :root {
+    --cum-primary:        #F08A78;
+    --cum-primary-light:  #3D2520;
+    --cum-secondary:      #8FC4B4;
+    --cum-accent:         #FFB940;
+    --cum-destructive:    #EF6B6B;
+    --cum-success:        #6ECF9D;
+
+    --cum-bg:             #1A1816;
+    --cum-surface:        #2D2926;
+    --cum-surface-2:      #3A3530;
+
+    --cum-text-1:         #F5F1ED;
+    --cum-text-2:         #A39D97;
+    --cum-text-3:         #6B6560;
+    --cum-on-primary:     #FFFFFF;
+  }
+}
+
+/* ---------- Base element styles ---------- */
+html, body {
+  background: var(--cum-bg);
+  color: var(--cum-text-1);
+  font-family: var(--cum-font);
+  font-size: var(--cum-body-size);
+  line-height: var(--cum-body-lh);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+}
+
+/* Semantic type classes — use these directly */
+.cum-large-title { font-size: var(--cum-large-title-size); line-height: var(--cum-large-title-lh); font-weight: var(--cum-large-title-weight); letter-spacing: -0.02em; }
+.cum-title       { font-size: var(--cum-title-size);       line-height: var(--cum-title-lh);       font-weight: var(--cum-title-weight);       letter-spacing: -0.015em; }
+.cum-title2      { font-size: var(--cum-title2-size);      line-height: var(--cum-title2-lh);      font-weight: var(--cum-title2-weight);      letter-spacing: -0.01em; }
+.cum-title3      { font-size: var(--cum-title3-size);      line-height: var(--cum-title3-lh);      font-weight: var(--cum-title3-weight); }
+.cum-headline    { font-size: var(--cum-headline-size);    line-height: var(--cum-headline-lh);    font-weight: var(--cum-headline-weight); }
+.cum-body        { font-size: var(--cum-body-size);        line-height: var(--cum-body-lh);        font-weight: var(--cum-body-weight); }
+.cum-callout     { font-size: var(--cum-callout-size);     line-height: var(--cum-callout-lh);     font-weight: var(--cum-callout-weight); }
+.cum-subheadline { font-size: var(--cum-subheadline-size); line-height: var(--cum-subheadline-lh); font-weight: var(--cum-subheadline-weight); }
+.cum-footnote    { font-size: var(--cum-footnote-size);    line-height: var(--cum-footnote-lh);    font-weight: var(--cum-footnote-weight); }
+.cum-caption     { font-size: var(--cum-caption-size);     line-height: var(--cum-caption-lh);     font-weight: var(--cum-caption-weight); }
+.cum-caption2    { font-size: var(--cum-caption2-size);    line-height: var(--cum-caption2-lh);    font-weight: var(--cum-caption2-weight); }
+
+h1 { font-size: var(--cum-large-title-size); line-height: var(--cum-large-title-lh); font-weight: 700; letter-spacing: -0.02em; }
+h2 { font-size: var(--cum-title-size);       line-height: var(--cum-title-lh);       font-weight: 700; letter-spacing: -0.015em; }
+h3 { font-size: var(--cum-title2-size);      line-height: var(--cum-title2-lh);      font-weight: 600; }
+h4 { font-size: var(--cum-title3-size);      line-height: var(--cum-title3-lh);      font-weight: 600; }
+p  { font-size: var(--cum-body-size);        line-height: var(--cum-body-lh); }
+
+.cum-muted { color: var(--cum-text-2); }
