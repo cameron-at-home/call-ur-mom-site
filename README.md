@@ -4,7 +4,8 @@ Static marketing site for [call-ur-mom.com](https://call-ur-mom.com), served by 
 
 - `index.html`: landing page (static port of the "Coming Soon" design from Claude Design)
 - `privacy.html`: privacy policy for the iOS app
-- `colors_and_type.css`: brand color and type tokens shared by both pages
+- `terms.html`: terms of use for the iOS app (Apple's standard EULA plus subscription and free-trial terms)
+- `colors_and_type.css`: brand color and type tokens shared by all pages
 - `CNAME`: custom domain for GitHub Pages
 
 No build step. Preview locally with `python3 -m http.server` and open http://localhost:8000.
