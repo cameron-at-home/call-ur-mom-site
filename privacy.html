@@ -30,7 +30,7 @@
     <p class="meta">Effective October 18, 2026</p>
 
     <p>This policy explains what information the call-ur-mom iOS app ("the app") collects, how it is used, and the choices you have. The app is operated by Call Ur Mom LLC ("we", "us").</p>
-    <p>The short version: the people you choose to call, your reminders, and your call history stay on your device. We use your account details to sign you in, and basic analytics that are not tied to your account to understand how the app is used. Apple handles all payments. We do not sell your information, use it for advertising, or track you across other companies' apps and websites.</p>
+    <p>The short version: the people you choose to call, your reminders, and your call history stay on your device. We use your account details to sign you in, and basic analytics and crash reports that are not tied to your account to understand how the app is used and fix problems. Apple handles all payments. We do not sell your information, use it for advertising, or track you across other companies' apps and websites.</p>
 
     <h2>Information that stays on your device</h2>
     <p>The following is stored only in the app's storage on your iPhone. We never receive it, and it is not sent to Firebase or any other server we use.</p>
@@ -53,6 +53,7 @@
         </ul>
       </li>
       <li><strong>App analytics.</strong> We use Google Analytics for Firebase to understand how the app is used and to find problems. It automatically collects an app instance identifier, your device model, iOS version, app version, language, approximate location (such as country or city) derived from your IP address, and usage events such as app opens, sessions, screens viewed, app updates, and in-app purchases (the product, price and currency). We do not send it your account ID, email address, contacts, call history, notes, or Screen Time data, and we do not link analytics data to your account. The app does not ask for permission to track you, so iOS does not give the app or Google your device's advertising identifier.</li>
+      <li><strong>Crash reports.</strong> If the app crashes, Firebase Crashlytics sends a crash report to Google the next time you open the app. A report contains what the app was doing when it crashed (a technical stack trace), your device model, iOS version, app version, device state such as free memory and storage, and an identifier Crashlytics creates for this installation of the app. We do not send it your account ID, email address, contacts, call history, notes, or Screen Time data, and we do not link crash reports to your account.</li>
       <li><strong>Purchases.</strong> Subscriptions are sold and billed by Apple through the App Store. The app receives your subscription status from Apple on your device, such as which plan you have, whether it is active, and when it renews or expires. We never receive your payment details.</li>
       <li><strong>Messages you send us.</strong> If you email us, we receive your email address and whatever you include in your message.</li>
     </ul>
@@ -70,7 +71,7 @@
     <h2>Service providers</h2>
     <p>We share information only with the companies that run parts of the app for us, and only to provide the app:</p>
     <ul>
-      <li><strong>Google</strong> provides Firebase Authentication, Google Analytics for Firebase, Google Sign-In, and our email. Google processes this information on our behalf: <a href="https://firebase.google.com/support/privacy">firebase.google.com/support/privacy</a>.</li>
+      <li><strong>Google</strong> provides Firebase Authentication, Google Analytics for Firebase, Firebase Crashlytics, Google Sign-In, and our email. Google processes this information on our behalf: <a href="https://firebase.google.com/support/privacy">firebase.google.com/support/privacy</a>.</li>
       <li><strong>Apple</strong> provides Sign in with Apple, App Store payments, notifications and Screen Time. Apple's privacy policy applies to the information you give Apple: <a href="https://www.apple.com/legal/privacy/">apple.com/legal/privacy</a>.</li>
     </ul>
     <p>We may also disclose information if the law requires it, or to protect the rights and safety of our users or others.</p>
@@ -79,6 +80,7 @@
     <ul>
       <li><strong>Account information</strong> is kept for as long as your account exists.</li>
       <li><strong>Analytics data</strong> is kept for [CONFIRM: 2 months or 14 months, matching Google Analytics &gt; Admin &gt; Data retention for the call-ur-mom property], then deleted automatically.</li>
+      <li><strong>Crash reports</strong> are kept for 90 days, then deleted automatically.</li>
       <li><strong>Information on your device</strong> stays until you delete it, the contact it belongs to, your account, or the app.</li>
       <li><strong>Emails you send us</strong> are kept for as long as we need them to help you and keep a record of your request.</li>
     </ul>
