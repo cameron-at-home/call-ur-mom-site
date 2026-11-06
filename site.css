@@ -1,0 +1,51 @@
+/* Shared by every page: tokens, page base, header and footer. */
+:root{
+  color-scheme:dark;
+  --coral:#C2513C;
+  --coral-deep:#A8432F;
+  --coral-bright:#F08A78;
+  --ink:#1A1816;
+  --ink-raised:#2F2B28;
+  --ink-rule:#36312D;
+  --ink-step-rule:#4A4440;
+  --charcoal:#2D2926;
+  --cream:#F5F1ED;
+  --sand:#F3EEE9;
+  --paper:#FBF8F5;
+  --paper-rule:#ECE6E0;
+  --muted-on-ink:#A39D97;
+  --muted-on-white:#6F6862;
+  --sage-tint:#E3EFEA;
+  --sage-deep:#376B5C;
+  --white:#FFFFFF;
+  --gutter:clamp(16px,5vw,40px);
+  --band:clamp(56px,8vw,104px);
+}
+body{margin:0;background:var(--ink);color:var(--cream);font-family:-apple-system,BlinkMacSystemFont,'SF Pro Text','SF Pro Display','Helvetica Neue',system-ui,sans-serif;-webkit-font-smoothing:antialiased}
+h1,h2,p,ol{margin:0}
+
+.wrap{max-width:1200px;margin:0 auto;padding-left:var(--gutter);padding-right:var(--gutter)}
+.coral-band{background:var(--coral);color:var(--white)}
+
+/* Header */
+.site-header{padding-top:24px;padding-bottom:24px;display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:12px 24px}
+.site-header a{display:inline-flex;align-items:center;min-height:44px;color:var(--white);text-decoration:none}
+/* The negative margin keeps the logo's 20px line in the layout while its tap target is 44px */
+.logo{margin:-12px 0;font-size:17px;font-weight:700;letter-spacing:-.01em}
+.site-nav{display:flex;flex-wrap:wrap;align-items:center;gap:4px 24px;font-size:15px;font-weight:600}
+
+/* Footer: links are 44px tall, so the padding gives back what they add to the 18px line */
+.site-footer{border-top:1px solid var(--ink-rule)}
+.footer-row{padding-top:11px;padding-bottom:27px;display:flex;flex-wrap:wrap;justify-content:space-between;gap:0 24px;font-size:13px;line-height:18px;color:var(--muted-on-ink)}
+.footer-row a{display:inline-flex;align-items:center;min-height:44px;color:var(--cream)}
+
+/* Privacy and Terms pages */
+.legal{padding-top:clamp(40px,6vw,64px);padding-bottom:var(--band)}
+.legal>*{max-width:720px}
+.legal h1{font-size:clamp(34px,4vw,48px);line-height:1.05;font-weight:800;letter-spacing:-.04em}
+.legal h2{margin:40px 0 12px;font-size:22px;line-height:26px;font-weight:800;letter-spacing:-.03em}
+.legal p,.legal li{margin:0 0 12px;font-size:17px;line-height:26px}
+.legal ul{margin:0 0 12px;padding-left:1.25rem}
+.legal li ul{margin-top:12px}
+.legal a{color:var(--coral-bright);text-underline-offset:3px}
+.legal .meta{margin:8px 0 28px;font-size:15px;line-height:22px;color:var(--muted-on-ink)}

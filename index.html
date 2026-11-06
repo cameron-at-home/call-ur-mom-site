@@ -5,34 +5,8 @@
 <title>call-ur-mom — coming soon</title>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
 <meta name="description" content="call-ur-mom is an iOS app that reminds you to call the people you love, and holds your apps until you do. Coming soon to the App Store."/>
+<link rel="stylesheet" href="site.css"/>
 <style>
-:root{
-  color-scheme:dark;
-  --coral:#C2513C;
-  --coral-deep:#A8432F;
-  --coral-bright:#F08A78;
-  --ink:#1A1816;
-  --ink-raised:#2F2B28;
-  --ink-rule:#36312D;
-  --ink-step-rule:#4A4440;
-  --charcoal:#2D2926;
-  --cream:#F5F1ED;
-  --sand:#F3EEE9;
-  --paper:#FBF8F5;
-  --paper-rule:#ECE6E0;
-  --muted-on-ink:#A39D97;
-  --muted-on-white:#6F6862;
-  --sage-tint:#E3EFEA;
-  --sage-deep:#376B5C;
-  --white:#FFFFFF;
-  --gutter:clamp(16px,5vw,40px);
-  --band:clamp(56px,8vw,104px);
-}
-body{margin:0;background:var(--ink);color:var(--cream);font-family:-apple-system,BlinkMacSystemFont,'SF Pro Text','SF Pro Display','Helvetica Neue',system-ui,sans-serif;-webkit-font-smoothing:antialiased}
-h1,h2,p,ol{margin:0}
-
-.wrap{max-width:1200px;margin:0 auto;padding-left:var(--gutter);padding-right:var(--gutter)}
-.coral-band{background:var(--coral);color:var(--white)}
 .icon{fill:none;stroke:currentColor;stroke-linecap:round;stroke-linejoin:round;flex:none}
 .pill{display:inline-flex;align-items:center;gap:8px;border-radius:999px;background:rgba(45,41,38,.18);border:1.5px solid rgba(255,255,255,.35);font-weight:600}
 
@@ -42,13 +16,6 @@ h1,h2,p,ol{margin:0}
 .btn-cream{background:var(--cream);color:var(--ink)}
 .btn-ink{background:var(--ink-raised);color:var(--cream)}
 .btn-row{display:flex;flex-wrap:wrap;gap:12px}
-
-/* Header */
-.site-header{padding-top:24px;padding-bottom:24px;display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:12px 24px}
-.site-header a{display:inline-flex;align-items:center;min-height:44px;color:var(--white);text-decoration:none}
-/* The negative margin keeps the logo's 20px line in the layout while its tap target is 44px */
-.logo{margin:-12px 0;font-size:17px;font-weight:700;letter-spacing:-.01em}
-.site-nav{display:flex;flex-wrap:wrap;align-items:center;gap:4px 24px;font-size:15px;font-weight:600}
 
 /* Hero */
 .hero{padding-top:clamp(24px,5vw,64px);padding-bottom:clamp(56px,8vw,104px);display:flex;flex-wrap:wrap;align-items:center;gap:56px}
@@ -128,11 +95,6 @@ h1,h2,p,ol{margin:0}
 .close-title{max-width:1000px;font-size:clamp(52px,8vw,112px);line-height:.94;font-weight:800;letter-spacing:-.045em;text-wrap:balance}
 .close-text{max-width:580px;font-size:20px;line-height:30px;color:var(--muted-on-ink);text-wrap:pretty}
 .close .btn-row{justify-content:center}
-
-/* Footer: links are 44px tall, so the padding gives back what they add to the 18px line */
-.site-footer{border-top:1px solid var(--ink-rule)}
-.footer-row{padding-top:11px;padding-bottom:27px;display:flex;flex-wrap:wrap;justify-content:space-between;gap:0 24px;font-size:13px;line-height:18px;color:var(--muted-on-ink)}
-.footer-row a{display:inline-flex;align-items:center;min-height:44px;color:var(--cream)}
 </style>
 </head>
 <body>
@@ -237,7 +199,7 @@ h1,h2,p,ol{margin:0}
       <div class="lock-copy">
         <span class="lock-eyebrow">The lock</span>
         <h2 class="lock-title">A nudge you can't scroll past. Never a trap.</h2>
-        <p class="lock-text">At call time, the apps you pick take a rest. Every lock shows its exits: call now, get reminded in 15 minutes, skip today, or log a call you already made whether it was in person or on FaceTime.</p>
+        <p class="lock-text">At call time, the apps you pick take a rest. Call now, get reminded in 15 minutes, skip today, or log a call you already made whether it was in person or on FaceTime.</p>
         <div class="privacy-note">
           <svg class="icon" width="20" height="20" viewBox="0 0 24 24" stroke-width="2" aria-hidden="true"><polyline points="20 6 9 17 4 12"></polyline></svg>
           <span>Built on Apple's Screen Time, so your app usage never leaves your phone. <a href="privacy.html">Read our privacy policy</a></span>
