@@ -5,27 +5,20 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Privacy Policy | call-ur-mom</title>
   <meta name="description" content="How the call-ur-mom app handles your information.">
-  <link rel="stylesheet" href="colors_and_type.css">
-  <style>
-    * { box-sizing: border-box; }
-    html, body { margin: 0; }
-    a { color: var(--cum-primary); text-underline-offset: 3px; }
-    .pp-head { background: linear-gradient(180deg, #E8705A 0%, #D25E48 100%); color: #fff; }
-    .pp-head-inner { max-width: 720px; margin: 0 auto; padding: 20px 16px; }
-    .pp-logo { color: #fff; font-size: 22px; font-weight: 700; letter-spacing: -.02em; text-decoration: none; }
-    main { max-width: 720px; margin: 0 auto; padding: 40px 16px 64px; }
-    main h1 { margin: 0 0 4px; }
-    main h2 { font-size: var(--cum-title3-size); line-height: var(--cum-title3-lh); font-weight: 600; letter-spacing: 0; margin: 36px 0 8px; }
-    main p, main li { line-height: 1.6; margin: 0 0 12px; }
-    main ul { padding-left: 1.25rem; }
-    main li ul { margin-top: 12px; }
-    .meta { color: var(--cum-text-2); margin-bottom: 28px; }
-    footer { border-top: 1px solid var(--cum-surface-2); margin-top: 48px; padding-top: 16px; color: var(--cum-text-2); font-size: 14px; }
-  </style>
+  <link rel="stylesheet" href="site.css">
 </head>
 <body>
-  <header class="pp-head"><div class="pp-head-inner"><a class="pp-logo" href="/">call-ur-mom</a></div></header>
-  <main>
+  <header class="coral-band">
+    <div class="wrap site-header">
+      <a class="logo" href="./">call-ur-mom</a>
+      <nav class="site-nav" aria-label="Main">
+        <a href="./#how">How it works</a>
+        <a href="privacy.html">Privacy</a>
+        <a href="mailto:support@call-ur-mom.com">Support</a>
+      </nav>
+    </div>
+  </header>
+  <main class="wrap legal">
     <h1>Privacy Policy</h1>
     <p class="meta">Effective November 6, 2026</p>
 
@@ -114,8 +107,12 @@
 
     <h2>Contact</h2>
     <p>Call Ur Mom LLC<br><a href="mailto:support@call-ur-mom.com">support@call-ur-mom.com</a></p>
-
-    <footer>&copy; 2026 Call Ur Mom LLC &middot; <a href="terms.html">Terms of Use</a></footer>
   </main>
+  <footer class="site-footer">
+    <div class="wrap footer-row">
+      <span>&copy; 2026 Call Ur Mom LLC &middot; <a href="privacy.html">Privacy policy</a> &middot; <a href="terms.html">Terms of Use</a></span>
+      <span>Questions? <a href="mailto:support@call-ur-mom.com">support@call-ur-mom.com</a></span>
+    </div>
+  </footer>
 </body>
 </html>
