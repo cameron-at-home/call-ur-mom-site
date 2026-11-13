@@ -4,7 +4,7 @@ Static marketing site for [call-ur-mom.com](https://call-ur-mom.com), served by 
 
 - `index.html`: landing page (static port of the home page design from Claude Design)
 - `privacy.html`: privacy policy for the iOS app
-- `terms.html`: terms of use for the iOS app (Apple's standard EULA plus subscription and free-trial terms)
+- `terms.html`: terms of use for the iOS app (Apple's standard EULA plus subscription, free-trial and invite terms)
 - `site.css`: tokens, header, footer and legal page styles shared by every page
 - `CNAME`: custom domain for GitHub Pages
 
